@@ -70,14 +70,7 @@ const HamburgerMenu = ({ items, ...restProps }) => {
 }
 
 HamburgerMenu.propTypes = {
-    children: PropTypes.any.isRequired,
-    size: PropTypes.oneOf(['medium', 'large']),
-    type: PropTypes.oneOf(['primary', 'outline']),
-}
-
-HamburgerMenu.defaultProps = {
-    size: 'medium',
-    type: 'primary'
+    items: PropTypes.array.isRequired
 }
 
 export default React.memo(HamburgerMenu);

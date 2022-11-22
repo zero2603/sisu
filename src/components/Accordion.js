@@ -11,7 +11,7 @@ const AccordionItem = ({ item, isActived, onClick }) => {
             <div className="question">
                 <div className="text">{item.question}</div>
                 {
-                    !isActived ? <img class="chevron" src={chevronRightIcon} alt="chevron" /> : null
+                    !isActived ? <img className="chevron" src={chevronRightIcon} alt="chevron" /> : null
                 }
             </div>
             {
@@ -32,8 +32,6 @@ const Accordion = ({ items }) => {
     const onClickItem = (idx) => {
         setActiveIndex(idx);
     }
-
-    console.log(activeIndex)
 
     return (
         <div className="accordion">

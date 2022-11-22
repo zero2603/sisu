@@ -58,18 +58,7 @@ const Navigator = ({ items }) => {
 }
 
 Navigator.propTypes = {
-    // items: PropTypes.shape({
-    //     key: PropTypes.string.isRequired,
-    //     title: PropTypes.string.isRequired,
-    //     type: PropTypes.oneOf(['link', 'dropdown']).isRequired,
-    //     dropdown: PropTypes.elementType,
-    //     url: PropTypes.string
-    // })
     items: PropTypes.array.isRequired
-}
-
-Navigator.defaultProps = {
-    type: 'link'
 }
 
 export default React.memo(Navigator);

@@ -1,7 +1,5 @@
 import React from "react";
-import Button from "../components/Button";
 // images
-import appsImg from '../assets/images/apps.svg';
 import Accordion from "../components/Accordion";
 import MailCard from "../components/MailCard";
 
