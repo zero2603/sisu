@@ -85,6 +85,7 @@ body {
         align-items: center;
         padding-top: 1rem;
         padding-bottom: 1rem;
+        max-width: calc(100% - 70px);
 
         .logo-wrapper {
             flex: 1;
@@ -521,105 +522,22 @@ body {
 *  Responsive
 */
 
-@media screen and (max-width: 575.98px) {
+@media screen and (max-width: 1199.98px) {
 
-    // header
-    .header {
-        .container {
-            .logo-wrapper {
-                display: none;
-            }
-        }
-    }
-
-    // sections
     // hero
     .hero {
         .container {
+            flex-direction: column;
+            gap: 0;
 
-            .hero-content {
-                .headline {
-                    font-size: 40px;
+            .hero-image {
+                position: relative;
+                
+                img {
+                    position: static;
+                    max-width: calc(100vw - 70px);
+                    width: 100%;
                 }
-            }
-        }
-
-        .hero-background {
-            width: calc(100% - 8px);
-            left: 4px;
-        }
-    }
-
-    // register
-    .register {
-        margin-left: 4px;
-        margin-right: 4px;
-    }
-}
-
-@media screen and (max-width: 767.98px) {
-
-    // header
-    .header {
-        height: 40px;
-    }
-
-    .main-content {
-        padding-top: 60px;
-    }
-
-    // register
-    .register {
-        margin-left: 8px;
-        margin-right: 8px;
-        margin-top: 32px;
-
-        .register-content {
-
-            .title,
-            .subtitle {
-                font-size: 20px;
-            }
-
-            .title::before {
-                bottom: 10px;
-            }
-
-            .action {
-                .submit {
-                    padding: 20px 23px;
-                    height: 64px;
-                    min-width: 60px;
-
-                    .text {
-                        display: none;
-                    }
-
-                    .arrow {
-                        display: block;
-                    }
-                }
-
-
-            }
-
-        }
-    }
-
-    // feature
-    .feature {
-        .feature--chains {
-            .title {
-                font-size: 20px;
-            }
-        }
-    }
-
-    // apps
-    .apps {
-        .apps-wrapper {
-            .title {
-                font-size: 20px;
             }
         }
     }
@@ -638,6 +556,10 @@ body {
         .container {
             padding-top: 8px;
             padding-bottom: 8px;
+            padding-left: 0;
+            padding-right: 0;
+            max-width: calc(100vw - 70px);
+            left: 35px;
 
             .navs,
             .button-group {
@@ -707,7 +629,7 @@ body {
 
 
             .hero-content {
-                padding-top: 32px;
+                padding: 32px 16px 0;
                 align-items: center;
 
                 .headline {
@@ -779,23 +701,134 @@ body {
     }
 }
 
-@media screen and (max-width: 1199.98px) {
+@media screen and (max-width: 767.98px) {
+
+    // header
+    .header {
+        height: 52px;
+
+        .container {
+            max-width: calc(100vw - 32px);
+            left: 16px;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .main-content {
+        padding-top: 60px;
+    }
 
     // hero
     .hero {
-        .container {
-            flex-direction: column;
-            gap: 0;
+        .hero-background {
+            width: calc(100% - 32px);
+            left: 16px;
+        }
+    }
 
-            .hero-image {
-                position: relative;
-                
-                img {
-                    position: static;
-                    max-width: calc(100vw - 70px);
-                    width: 100%;
+    // register
+    .register {
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 32px;
+
+        .register-content {
+
+            .title,
+            .subtitle {
+                font-size: 20px;
+            }
+
+            .title::before {
+                bottom: 10px;
+            }
+
+            .action {
+                .submit {
+                    padding: 20px 23px;
+                    height: 64px;
+                    min-width: 60px;
+
+                    .text {
+                        display: none;
+                    }
+
+                    .arrow {
+                        display: block;
+                    }
+                }
+
+
+            }
+
+        }
+    }
+
+    // feature
+    .feature {
+        .feature--chains {
+            .title {
+                font-size: 20px;
+            }
+        }
+    }
+
+    // apps
+    .apps {
+        .apps-wrapper {
+            .title {
+                font-size: 20px;
+            }
+        }
+
+        .apps-background {
+            max-width: calc(100vw - 16px);
+            left: 8px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 575.98px) {
+
+    // header
+    .header {
+        height: 40px;
+
+        .container {
+            max-width: calc(100vw - 16px);
+            left: 8px;
+            padding-left: 8px;
+            padding-right: 8px;
+
+            .logo-wrapper {
+                display: none;
+            }
+        }
+    }
+
+    // sections
+    // hero
+    .hero {
+        .container {
+
+            .hero-content {
+                .headline {
+                    font-size: 40px;
                 }
             }
         }
+
+        .hero-background {
+            width: calc(100% - 16px);
+            left: 8px;
+        }
+    }
+
+    // register
+    .register {
+        margin-left: 8px;
+        margin-right: 8px;
     }
 }
