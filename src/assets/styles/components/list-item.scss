@@ -1,0 +1,18 @@
+.list-item {
+    span {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 215%;
+    }
+
+    span::before {
+        display: inline-block;
+        content: "";
+        background: url('../../icons/check-bullet.svg') no-repeat;
+        width: 18px;
+        height: 18px;
+        margin-right: 16px;
+        position: relative;
+        bottom: -3px;
+    }
+}

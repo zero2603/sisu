@@ -1,0 +1,65 @@
+.text-with-image {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+    gap: 32px;
+
+    .image {
+        flex: 1;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .text {
+        flex: 1;
+
+        .title {
+            font-weight: 900;
+            font-size: 50px;
+            line-height: 180%;
+        }
+
+        .content {
+            font-size: 17px;
+            line-height: 180%;
+        }
+    }
+
+    .list-items {
+        margin-top: 16px;
+    }
+}
+
+.text-with-image.left {
+    flex-direction: row;
+}
+
+.text-with-image.right {
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 767.98px) {
+    .text-with-image {
+        .text {
+            .title {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .text-with-image { 
+        margin-top: 64px;
+    }
+    
+    .text-with-image.left {
+        flex-direction: column;
+    }
+    
+    .text-with-image.right {
+        flex-direction: column;
+    }
+}

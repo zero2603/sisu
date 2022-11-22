@@ -1,0 +1,24 @@
+.accordion {
+    .accordion-item {
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        padding: 18px 0;
+        cursor: pointer;
+
+        .question {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+
+            .text {
+                font-size: 17px;
+                line-height: 24px;
+            }
+        }
+
+        .answer {
+            margin-top: 16px;
+            font-size: 14px;
+            cursor: initial !important;
+        }
+    }
+}

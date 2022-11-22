@@ -1,0 +1,107 @@
+// font
+@font-face {
+    font-family: Gordita;
+    font-style: normal;
+    font-weight: 900;
+    src: local("Gordita"), url('../fonts/gordita/Gordita\ Black.woff') format('woff');
+}
+
+@font-face {
+    font-family: Gordita;
+    font-style: italic;
+    font-weight: 900;
+    src: local("Gordita"), url('../fonts/gordita/Gordita\ Black\ Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: Gordita;
+    font-style: normal;
+    font-weight: 700;
+    src: local("Gordita"), url('../fonts/gordita/Gordita\ Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: Gordita;
+    font-style: italic;
+    font-weight: 700;
+    src: local("Gordita"), url('../fonts/gordita/Gordita\ Bold\ Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: Gordita;
+    font-style: normal;
+    font-weight: 300;
+    src: local("Gordita"), url('../fonts/gordita/Gordita\ Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: Gordita;
+    font-style: italic;
+    font-weight: 300;
+    src: local("Gordita"), url('../fonts/gordita/Gordita\ Light\ Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: Gordita;
+    font-style: normal;
+    font-weight: 500;
+    src: local("Gordita"), url('../fonts/gordita/Gordita\ Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: Gordita;
+    font-style: italic;
+    font-weight: 500;
+    src: local("Gordita"), url('../fonts/gordita/Gordita\ Medium\ Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: Gordita;
+    font-style: normal;
+    font-weight: 400;
+    src: local("Gordita"), url('../fonts/gordita/Gordita\ Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: Gordita;
+    font-style: italic;
+    font-weight: 400;
+    src: local("Gordita"), url('../fonts/gordita/Gordita\ Regular\ Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: Gordita;
+    font-style: normal;
+    font-weight: 100;
+    src: local("Gordita"), url('../fonts/gordita/Gordita\ Thin.woff') format('woff');
+}
+
+@font-face {
+    font-family: Gordita;
+    font-style: italic;
+    font-weight: 100;
+    src: local("Gordita"), url('../fonts/gordita/Gordita\ Thin\ Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: Gordita;
+    font-style: normal;
+    font-weight: 950;
+    src: local("Gordita"), url('../fonts/gordita/Gordita\ Ultra.woff') format('woff');
+}
+
+@font-face {
+    font-family: Gordita;
+    font-style: italic;
+    font-weight: 950;
+    src: local("Gordita"), url('../fonts/gordita/Gordita\ Ultra\ Italic.woff') format('woff');
+}
+
+// color
+$primary-color: #0f4fe1;
+$gray-color: #bbc2d0;
+$hover-bg-color: #e9ecef;
+
+// others
+$gutter-x: 0.75rem;
+$gutter-y: 0rem;

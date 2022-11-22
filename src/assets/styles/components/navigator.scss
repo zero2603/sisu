@@ -1,0 +1,24 @@
+@import '../variables.scss';
+
+.navs {
+    .nav-item {
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+    
+    .nav-item--active::before {
+        content: "";
+        position: absolute;
+        width: calc(100% + 16px);
+        height: 6px;
+        left: -8px;
+        bottom: -5px;
+        background: $primary-color;
+        opacity: .4;
+    }
+}

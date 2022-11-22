@@ -1,0 +1,41 @@
+@import '../variables.scss';
+
+.btn {
+    box-sizing: border-box;
+    border-radius: 150px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+    padding: 0.5rem 0;
+    width: 150px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    text-decoration: none;
+    border: none;
+}
+
+.btn--medium {
+    width: 150px;
+}
+
+.btn--large {
+    width: 240px;
+    height: 64px;
+}
+
+.btn--primary {
+    background-color: $primary-color;
+    color: #fff;
+}
+
+.btn--outline {
+    border: 1.5px solid $primary-color;
+    background-color: #fff;
+    color: $primary-color;
+}
